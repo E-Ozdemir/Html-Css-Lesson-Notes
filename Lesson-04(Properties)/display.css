@@ -1,0 +1,49 @@
+.head1 {
+    color: purple;
+}
+.head2 {
+    color: royalblue;
+}
+.head3{
+    color: seagreen;
+}
+span.a{
+    display: inline;  /* inline boyutlandirilamaz! */
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    border: 2px solid yellowgreen;
+    background-color: purple;
+    color: white;
+}
+span.b{
+    display: inline-block; /*bu boyutlandirilabilir*/
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 2px solid yellow;
+    background-color: royalblue;
+}
+span.c{
+    display: block; /* bir bloklama yapar ve o satiri boydan boya kendine ayirir */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 3px solid orange;
+    background-color: seagreen;
+}
+
+span.d{
+    /* display: none; */ /*görüntüyü saklar yeri de gizler*/
+    visibility: hidden; /*konumu isgal etmeye devam eder*/
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 3px solid yellowgreen;
+    background-color: orange;
+
+
+
+
+}
+
