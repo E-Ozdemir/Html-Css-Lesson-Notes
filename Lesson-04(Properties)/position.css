@@ -23,7 +23,7 @@
 .absolute{ /*parentdan devraldigi seye göre sekil alir*/
     position: absolute;
     border: 3px dashed blue;
-    top: 50px;
+    top: 60px;
     right: 0px;
     width: 120px;
     height: 70px;
@@ -36,4 +36,11 @@
     width: 300px;
     height: 200px;
 
+}
+.sticky{ /*parenta bagliysa ki bagli olmali parent bittiginde sayfada scroll ederken parent bittiginde sticky de kaybolur. anne baba nereye sticky oraya, genellikle parenta dahil edilmeli edilmezse body yi parent olarak kabul eder*/
+    position: sticky;
+    top: 10px;
+    padding: 7px;
+    background-color: burlywood;
+    border: 3px solid coral;
 }
