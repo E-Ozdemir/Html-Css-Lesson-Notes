@@ -1,0 +1,14 @@
+/*icerigi konumlandirmak  icin kullanilir. resim textin saginda mi solunda mi gözüksün gibi ikilemleri cözüyoruz.*/
+div{
+    border: 3px solid black;
+}
+img{
+    float: right;
+}
+/* mutlak olark konumlandirilmis elementler floati gözardi eder. */
+/* clear property; resmin sagindan solundan akarsa bunu temizle!! */
+.clearfix::after{
+    content: "";
+    clear: right;
+    display: table;
+}
