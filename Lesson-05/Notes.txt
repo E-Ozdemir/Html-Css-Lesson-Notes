@@ -1,0 +1,35 @@
+Absolute lengths(mutlak kesin)
+-cm,mm,in,px,pt,pc
+ >Bu degerlerde ifade edilen uzunluk neyse sabit kalir.
+ >esnek ve duyarli degil yani her cihaza uyumlu degil. Resposive sitelerde problem olusturuyor.
+mesela; dergi kitap bastiracaksak.
+
+
+Relative lengths
+
+
+(baska bir seye göre sekilleniyor)
+>diger elementlere göre sekilleniyor ve daha esnek.
+
+em  >>> html belgesinin font sizeinin
+ex karakterlerin yüksekligi
+rem>>>(root)
+
+
+
+-----------------------------
+v port>>> görüntü alani
+
+vw
+vh
+vmin
+vmax
+
+------------
+ögeyi ön plana cikanrmak icin outline kullaniliyor.
+borderin disina style veriyor.
+outline-style dotted
+outline color
+outline offset
+outline-width
+outline

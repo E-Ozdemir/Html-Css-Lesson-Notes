@@ -1,0 +1,72 @@
+.outline{
+    border: 3px solid  steelblue;
+    padding: 15px;
+    text-align: center;
+    outline: 5px solid red;
+}
+ 
+
+p{
+    outline-color: royalblue;
+    text-align: center;
+    /* margin-top: 20px; */
+    padding: 15px;
+    outline-width:thick ;
+}
+
+
+/* thin 1px,medium 3px,thick 5px, ne isterseniz 0 yani kalinligi giriyoruz */
+
+p.dotted{
+    outline-style: dotted;
+    
+}
+p.dashed{
+    outline-style: dashed;
+}
+p.solid{
+    outline-color: purple;
+    border: 8px solid red;
+    outline-style: solid;
+    outline-offset: 15px;
+    /* transition: all ease-in-out 300ms; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+} 
+p.double{
+    outline-style: double;
+
+}
+p.groove{
+    outline-style: groove;
+}
+p.ridge{
+    outline-style: ridge;
+}
+p.outset{
+    outline-style: outset;
+   
+}
+p.inset{
+    outline: 5px inset purple;
+}
+/* p ye outline style i belirtmedigim sürece renklendiremeyiz!!!! */
+.container{
+    text-align: center;
+}
+.button{
+    text-decoration: none;
+    display: inline-block;
+    background: steelblue;
+    padding: 1em 3em;
+    color: white;
+    border-radius: 10px;
+    outline: 3px solid white;
+    transition: all ease-in-out 300ms;
+
+}
+.button:hover{
+    outline: 3px solid whitesmoke;
+    outline-offset: -8px;
+}

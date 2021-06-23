@@ -1,0 +1,38 @@
+.lorem1{
+    height: 500px;
+    width: 50%;
+    background-color: crimson;
+}
+.lorem2{
+    background-color: lightblue;
+    width: 300px;
+    padding: 20px;
+    border: 15px solid blue;
+}
+.max-witdh{
+    max-width: 50%; /*sayfanin yarisina kadar yayil*/
+    /* width: 75%; max-width degeri witdh degerini gecersiz kilar */
+}
+.min-witdh{
+    min-width: 600px;
+    display: inline-block; /*bu sayede width ile uzatmamiz mümkün oluyor*/
+}
+span{ /*in line element oldugu icin yazinin bittigi yere kadar kapsiyor, p deseydik satir sonuna kadar yer isgal edecekti*/
+    background-color: tomato;
+}
+
+.max-height{
+    max-height: 20px;
+    border: 10px solid steelblue;
+    /* outline-color: tomato;
+    outline-offset: 5px; */
+    padding: 10px;
+    overflow: auto;/*tasmayi böyle engelledik*/
+}
+.last{
+    background-color: violet;
+
+}
+.min-height{
+    min-height: 100px;
+}
