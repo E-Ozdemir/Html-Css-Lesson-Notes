@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container{
+    border: 6px solid green;
+    display:flex;
+    height: 500px;/* wrap vermeden once sayfada scrool bar ciktigini gostermek icin */
+    /* flex-direction:row-reverse ; */
+    /* flex-direction: column; */
+    /* display: inline-flex; */
+    /* flex-wrap: wrap; */
+    /* flex-flow: row nowrap;  shorthand -direction daha sonra flexwrap */
+
+    /* justify-content: flex-start,flex-end,space-around(x,2x),space-evenly(esit bosluk koyuyor),space-between */
+    flex-direction: row;
+
+    /* justify-content: flex-start;default*/
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+
+    /* Align Items */
+ /* y eksenine göre yani cross a göre ayarlama */
+
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* perfect centering icin align-items: center; vejustify-content: center; yazilmali */
+    /* align-items: baseline; */
+
+
+    /* Align Content------wrap acik olmali */
+    /* align-content: stretch; */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+
+
+}
+.items{
+    background-color: indianred;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin: 3px;
+    text-align: center;
+    width: 300px;
+    
+
+    /* +++++++flex items properties+++++ */
+    /* ekran 600px in altina düstügünde sira degistir bunu orderla yapiyoruz */
+
+
+
+}
+
+.items1{
+    /* font-size: 70px; */
+    /* order: 1, */
+    align-self: flex-start;
+}
+.items2{
+    /* font-size: 50px; */
+    /* order: 2; */
+    /* flex-basis: 200px; */
+    align-self: flex-end;
+} 
+/* itemlara ayni order numarasi verildiginde html koddaki sira önceligi devreye girer */
+.items3{
+    /* order: 4; */
+    /* flex-grow: 1; */
+    /* flex-grow: default deger 0; */
+    align-self: center;
+}
+.items4{
+    /* order: 4; */
+    /* flex-grow: 3;  */
+    /*bosluk 4 parca bunun 4/3 ü items 4 e veriyoruz, bir birimlik kisimi item3 aliyor*/
+    /* flex-shrink: 0;  */
+    /*kuculme daralma demek*/
+    align-self: baseline;
+}
