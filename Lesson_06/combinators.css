@@ -1,0 +1,47 @@
+/*Combinators
+-------selectors-------
+element selector h1{},p{} ,div{}......
+id selectors #idselector{}..
+class selector .classelector{}
+universal selector *{}
+grupping selector p,h1,h2{}
+element.class     p.hello{}
+
+combinators-----
+div p{}
+div > p{}
+h1 +p{}
+h2 ~ p{}
+*/
+/* Descendent sellector ; divin icerisindeki tüm  p taglerini  1-2-3*/
+
+div p{
+    background-color: seagreen;
+    color: seashell;
+    text-align: center;
+    
+}
+
+/* Child Sellector belirtilen ögenin cocuklarini alir, cocuklarinin cocugunu degil!!!!! 1-2-4 */
+
+/* div > p{
+    background-color: rgb(161, 159, 15);
+    color: rgb(19, 7, 5);
+} */
+
+/* Adj sibling(kardes) sellector komsu kardes yada bitisik kardes secici , ayni kardes parenta sahip olmali*/
+/* divden hemen sonra gelen ilk p yi aliyor   5*/
+
+/* div + p{
+    background-color: teal;
+} */
+
+/* general sibling ,genel kardes secici divden sonra gelen tüm p ler; 5-6*/
+
+div ~ p{
+    background-color: yellowgreen;
+    text-align: center;
+}
+body{
+    display: inline-block;
+}
