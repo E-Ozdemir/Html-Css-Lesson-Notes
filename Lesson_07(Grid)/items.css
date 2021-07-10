@@ -1,0 +1,66 @@
+#container{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    /* grid-template-columns: 10% 10% 50% 30%;  */
+    /*icerisinde farkli birimlerden ölcüler olabilir 5 rem diyebiliriz bir tanesine mesela*/
+
+
+    /* grid-template-columns: 10% 10% min-content 30%; */
+    /* en uzun kelimeye göre sütunu boyutlandiriyor */
+
+
+    /* grid-template-columns: 10% 10% max-content 30%; */
+    /* alt satira inmiyor */
+    
+    /* grid-template-columns: 10% 10% minmax(80px,2400px) 30%; */
+    
+    /* grid-template-columns: 100px 10% auto 20%; */
+    
+    
+    /* grid-template-columns: 1fr 1fr 5fr 2fr; */
+    /* ekrani 9'a böl ve birimlere göre pay et! bu yapi fruction */
+
+
+
+    /* iki tanesini 1 fr'lik yap 3.yü 3 fr'lik yap sonuncuyu da 100p'lik yap */
+    /* grid-template-columns:repeat(2,1fr) 3fr  100px; */
+    grid-template-columns:repeat(4,200px);
+    grid-gap:10px;
+}
+.content{
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 5px;
+    border: 3px solid orangered;
+    
+}
+.content1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: cyan;
+}
+.content2{
+    grid-row-start:1;
+    grid-row-end:3;
+    grid-column-start:4;
+    grid-column-end:5;
+    background-color: brown;
+}
+
+/* Kisa kullanim yolu! */
+.content3{
+    grid-column: 1/3;/*birici satirdan basla 3 e kadar git*/
+    grid-row: 2/4;
+    background-color: dimgrey;
+}
+.content4{
+    grid-row: 2/span 3; 
+    /* ikinci line dan basla ondan itibaren 3 line i birlestir, span ile tane sayisi veriyoruz!!! */
+    background-color: deeppink;
+}
+.content5{
+    grid-area:3/4/ span 2 / span 1;
+    /* satir baslangisi sütun baslangici, satir bitimi sütun bitimi */
+    background-color: darkolivegreen;
+}
