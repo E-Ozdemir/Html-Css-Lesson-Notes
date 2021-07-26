@@ -1,0 +1,67 @@
+@mixin style ($team){
+    
+    @if ($team == 'Stuttgart') {
+        background-color: rgb(161, 24, 24)
+    }
+    @else if ($team == 'Hoffenheim') {
+        background-color:blue;
+        color: white;
+    }
+    @else{
+        background-color: yellowgreen
+    }
+    
+};
+
+
+.kutu{
+    float: left;
+    padding:  10px 15px;
+    @include style('Hoffenheim')
+};
+
+// each döngüleri
+//liste olarak olusturulan yapilarin elemanlarina erismemize yariyor.
+
+//each döngüsünün map olarak kullanimi...
+$boyutlar : (
+    1:100,
+    2:200,
+    3:300,
+    4:400,
+    5:500,
+);
+//-------------------------
+@each $boyut in $boyutlar {
+    .b#{$boyut}{ 
+        //  #{}
+        font-size: 10 + $boyut +px;
+        //herbir eleman icin bir boyut degiskeni tanimlamis olduk.
+    }
+}
+// @each $isim,$boyut in $boyutlar {
+//     .b-{$isim}{ 
+//        float: left;
+//        width:$boyut +px
+//     }
+// }
+
+//for loops
+// to da end dahil degil, through de dahil
+@for $i from 1 through 5 {
+    .emre#{$i}{
+        float: left;
+        width: $i * 100 +px;
+    }
+}
+
+//while loops
+$number: 1;
+@while ($number <= 5) {
+    .k_#{$number} {
+        float: left;
+        width: $number * 100 +px;
+    }
+    $number: $number + 1;
+}
+

@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+$primaryColor:#44ffd7;
+$widthButton:100px;
+$textColor: red;
+nav{
+    background-color: $primaryColor;
+}
+.left{
+    list-style: none;
+    li{
+        $secondaryColor:darkgreen !global;
+        // tanimlanan degiskenin tüm projede kullanilabilmesi icin global yaziyoruz. yazmassak onu süslü parantez disinda kullanamayiz!!!
+        display: inline-block;
+        margin: 25px;
+        background-color: $secondaryColor;
+        &:first-child{
+            margin: 0px;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            display: inline-block;
+            padding: 10px;
+
+        }
+    }
+}
+.right a{
+    width: $widthButton;
+    
+    &:hover{
+        color: darken($textColor,50%);
+    }
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 5px;
+}
+
+
+// p{
+//     background-color: $secondaryColor;
+// }
