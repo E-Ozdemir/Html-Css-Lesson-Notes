@@ -1,0 +1,102 @@
+// @mixin icon ($boyut,$yuvarlak) {
+//     width:  $boyut;
+//     height: $boyut;
+//     @if ($yuvarlak) {
+//         border-radius: $boyut / 2 ;
+//     }
+// }
+
+
+// .container{
+//     float: left;
+//     @include icon (40px,true)
+//     background-color: tomato;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+// }
+
+//----------------------------------------------
+
+// @mixin kenarlik ($yon,$tur,$renk){
+//     @if ($yon == "l") {
+//         border-left: 3px $tur $renk;
+//     }
+//     @else if ($yon == "r"){
+//         border-right: 3px $tur $renk;
+//     }
+//     @else if ($yon == "b"){
+//         border-bottom: 3px $tur $renk;
+//     }
+// }
+
+// .container{
+//     width: 300px;
+//     height: 100px;
+//     background-color: orange;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     @include kenarlik( l,solid , #000 )
+
+// }
+
+//------------------------------
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: palegreen;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 5px solid red;
+}
+
+$color1: #6f86de;
+$color2: #272d46;
+$color3: #265a16;
+$color4: #7c761b;
+$color5: #dea56f;
+
+$dizi: $color1, $color2, $color3, $color4, $color5;
+
+@for $i from 1 through 5 {
+    .item-#{$i}{
+        width: 100px * $i;
+        height: 15px *$i;
+        background-color: nth($dizi , $i ) ; //nth özel bir fonksiyon...Dizinin icerisindeki  elemani ceken özel bir fonksiyon
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25%
+    }
+    
+}
+
+$dizi2: 1, 2, 3, 4, 5;
+@each $i in $dizi2 {
+    .item-#{$i}{
+        font-size: 10px * $i;
+    }
+}
+
+
+//while---
+$number:1;
+
+@while ($number <= 4) {
+    .item-#{$number}{
+        background-color: brown;
+        height:  1+ $number;
+    }
+    $number: $number +1;
+}

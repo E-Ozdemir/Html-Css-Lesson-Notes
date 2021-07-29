@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button, .button-error, .button-success, .button-warning {
+  float: left;
+  padding: 0;
+  margin: 5px;
+  color: #851335;
+}
+
+.button-error {
+  background-color: red;
+}
+
+.button-success {
+  background-color: #340aee;
+}
+
+.button-warning {
+  background-color: #d7ee0a;
+}
+
+footer {
+  float: left;
+  background-color: red;
+}
+
+#contact {
+  float: left;
+  background-color: #189e0c;
+}
+
+#dark {
+  float: left;
+  background-color: #2aa1b1;
+}
+/*# sourceMappingURL=main.css.map */
